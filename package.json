@@ -1,0 +1,32 @@
+{
+  "name": "zoem-editor",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "example": "examples"
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cp -r src/examples docs/ && parcel --dist-dir docs/",
+    "build": "rm -rf docs/ && parcel build --dist-dir docs/ --public-url ./ && cp -r src/examples docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoem-lang/zoem-editor.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zoem-lang/zoem-editor/issues"
+  },
+  "homepage": "https://github.com/zoem-lang/zoem-editor#readme",
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.19.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2",
+    "process": "^0.11.10",
+    "typescript": "^4.5.4"
+  }
+}
